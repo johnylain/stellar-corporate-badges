@@ -11,13 +11,13 @@ const FooterSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}
-          >
+            transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}>
+            
             <p className="label-text gold-text mb-6">Контакты</p>
             <div className="space-y-4 text-sm font-light text-muted-foreground">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 gold-icon flex-shrink-0 mt-0.5" strokeWidth={1.5} />
-                <span>г. Москва, ул. Большая Ордынка, 21, стр. 2<br />Шоурум по записи</span>
+                <span>г. Казань, ул. Фатыха Карима д.9<br />Шоурум по записи</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 gold-icon flex-shrink-0" strokeWidth={1.5} />
@@ -25,7 +25,7 @@ const FooterSection = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 gold-icon flex-shrink-0" strokeWidth={1.5} />
-                <a href="mailto:info@insignia.ru" className="hover:text-foreground luxury-transition">info@insignia.ru</a>
+                <a href="mailto:info@insignia.ru" className="hover:text-foreground luxury-transition">info@info.ru</a>
               </div>
               <div className="flex gap-4 pt-2">
                 <a href="#" className="glass-card p-3 hover:bg-[hsl(var(--surface-glass-hover))] luxury-transition" aria-label="WhatsApp">
@@ -44,14 +44,14 @@ const FooterSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.7, ease: [0.2, 0, 0, 1] }}
-            className="glass-card overflow-hidden min-h-[250px]"
-          >
+            className="glass-card overflow-hidden min-h-[250px]">
+            
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.8!2d37.6!3d55.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzAwLjAiTiAzN8KwMzYnMDAuMCJF!5e0!3m2!1sru!2sru!4v1"
               className="w-full h-full min-h-[250px] border-0 grayscale invert opacity-60"
               loading="lazy"
-              title="Карта расположения мастерской"
-            />
+              title="Карта расположения мастерской" />
+            
           </motion.div>
 
           {/* Legal */}
@@ -59,14 +59,14 @@ const FooterSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.7, ease: [0.2, 0, 0, 1] }}
-          >
+            transition={{ delay: 0.2, duration: 0.7, ease: [0.2, 0, 0, 1] }}>
+            
             <p className="label-text gold-text mb-6">Реквизиты</p>
             <div className="space-y-2 text-xs font-light text-muted-foreground font-mono">
-              <p>ООО «ИНСИГНИЯ»</p>
-              <p>ИНН 7712345678</p>
-              <p>ОГРН 1177746012345</p>
-              <p>КПП 771201001</p>
+              <p>ООО «КОМПАНИЯ»</p>
+              <p>ИНН 9999999999</p>
+              <p>ОГРН 9999999999</p>
+              <p>КПП 9999999999</p>
             </div>
           </motion.div>
         </div>
@@ -81,8 +81,8 @@ const FooterSection = () => {
           </a>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default FooterSection;
