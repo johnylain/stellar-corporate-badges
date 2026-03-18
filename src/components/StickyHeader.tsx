@@ -19,7 +19,6 @@ const StickyHeader = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
@@ -40,8 +39,8 @@ const StickyHeader = () => {
               <img src={logo} alt="Логотип" className="h-8 md:h-10 w-auto" />
             </a>
 
-            {/* Desktop nav */}
-            <nav className="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.15em] font-light text-muted-foreground">
+            {/* Desktop nav — visible from lg */}
+            <nav className="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.15em] font-light text-muted-foreground">
               {navLinks.map((link) => (
                 <a key={link.href} href={link.href} className="hover:text-foreground luxury-transition">
                   {link.label}
@@ -49,38 +48,42 @@ const StickyHeader = () => {
               ))}
             </nav>
 
-            {/* Desktop phone + CTA */}
-            <div className="hidden md:flex items-center gap-6">
+            {/* Right side: phone (tablet+) + CTA (desktop) + burger (mobile/tablet) */}
+            <div className="flex items-center gap-4 lg:gap-6">
+              {/* Phone — icon only on tablet, full on desktop */}
               <a
                 href="tel:+79999999999"
-                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground luxury-transition"
+                className="hidden md:flex items-center gap-2 text-muted-foreground hover:text-foreground luxury-transition"
+                aria-label="Позвонить"
               >
-                <Phone size={14} />
-                +7 (999) 999-99-99
+                <Phone size={16} />
+                <span className="hidden lg:inline text-xs">+7 (999) 999-99-99</span>
               </a>
+
+              {/* CTA — desktop only */}
               <motion.a
                 href="#contact"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10"
+                className="hidden lg:inline-flex bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10"
               >
                 Получить консультацию
               </motion.a>
-            </div>
 
-            {/* Mobile burger */}
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden p-2 text-foreground"
-              aria-label="Меню"
-            >
-              {menuOpen ? <X size={22} /> : <Menu size={22} />}
-            </button>
+              {/* Burger — below lg */}
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="lg:hidden p-2 text-foreground"
+                aria-label="Меню"
+              >
+                {menuOpen ? <X size={22} /> : <Menu size={22} />}
+              </button>
+            </div>
           </div>
         </div>
       </header>
 
-      {/* Mobile menu overlay */}
+      {/* Mobile/tablet menu overlay */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -88,7 +91,7 @@ const StickyHeader = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl pt-20 px-6 flex flex-col md:hidden"
+            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl pt-20 px-6 flex flex-col lg:hidden"
           >
             <nav className="flex flex-col gap-6 mt-8">
               {navLinks.map((link, i) => (
