@@ -57,7 +57,7 @@ const StickyHeader = () => {
                 aria-label="Позвонить"
               >
                 <Phone size={16} />
-                <span className="hidden lg:inline text-xs">+7 (999) 999-99-99</span>
+                <span className="text-xs">+7 (999) 999-99-99</span>
               </a>
 
               {/* CTA — desktop only */}
