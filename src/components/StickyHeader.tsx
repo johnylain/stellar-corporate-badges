@@ -17,7 +17,7 @@ const StickyHeader = () => {
       scrolled ? "bg-background/80 backdrop-blur-xl border-b border-foreground/5" : "bg-transparent"}`
       }>
       
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16 md:h-20">
+      <div className="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-6 md:px-12 lg:px-20">
         <a href="#">
           <img src={logo} alt="Логотип" className="h-8 md:h-10 w-auto" />
         </a>
