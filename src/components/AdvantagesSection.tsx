@@ -54,7 +54,7 @@ const AdvantagesSection = () => {
               transition={{ delay: i * 0.1, duration: 0.7, ease: [0.2, 0, 0, 1] }}
               className="glass-card-hover p-10 flex gap-6"
             >
-              <img src={a.icon} alt={a.title} className="w-12 h-12 flex-shrink-0 object-contain" />
+              <img src={a.icon} alt={a.title} className="w-24 h-24 flex-shrink-0 object-contain" />
               <div>
                 <h3 className="text-lg font-medium tracking-tight mb-3">{a.title}</h3>
                 <p className="text-sm font-light leading-relaxed text-muted-foreground">{a.desc}</p>

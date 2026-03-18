@@ -73,7 +73,7 @@ const SegmentsSection = () => {
               custom={i}
               className="glass-card-hover p-8 flex flex-col"
             >
-              <img src={seg.icon} alt={seg.title} className="w-10 h-10 mb-6 object-contain" />
+              <img src={seg.icon} alt={seg.title} className="w-20 h-20 mb-6 object-contain" />
               <h3 className="text-base font-medium mb-3 tracking-tight">{seg.title}</h3>
               <p className="text-sm font-light leading-relaxed text-muted-foreground">{seg.desc}</p>
             </motion.div>
