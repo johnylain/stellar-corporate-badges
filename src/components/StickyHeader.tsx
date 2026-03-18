@@ -107,12 +107,23 @@ const StickyHeader = () => {
             </nav>
 
             <motion.a
+              href="tel:+79999999999"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navLinks.length * 0.08 }}
+              className="mt-8 flex items-center gap-2 text-muted-foreground hover:text-foreground luxury-transition"
+            >
+              <Phone size={16} />
+              +7 (999) 999-99-99
+            </motion.a>
+
+            <motion.a
               href="#contact"
               onClick={() => setMenuOpen(false)}
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: navLinks.length * 0.08 }}
-              className="mt-10 bg-primary text-primary-foreground px-6 py-3 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10 text-center"
+              transition={{ delay: (navLinks.length + 1) * 0.08 }}
+              className="mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10 text-center"
             >
               Получить консультацию
             </motion.a>
