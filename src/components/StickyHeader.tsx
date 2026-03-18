@@ -32,8 +32,8 @@ const StickyHeader = () => {
             href="#contact"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10">
-            Получить консультацию
+            className="bg-primary text-primary-foreground px-3 py-1.5 md:px-6 md:py-2.5 rounded-sm text-[10px] md:text-xs font-medium tracking-wide uppercase border border-foreground/10">
+            Консультация
           </motion.a>
         </div>
       </div>
