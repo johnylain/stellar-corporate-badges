@@ -29,13 +29,15 @@ const segments = [
   },
 ];
 
+const easeOut: [number, number, number, number] = [0.2, 0, 0, 1];
+
 const cardVariants = {
   hidden: { opacity: 0, y: 20, scale: 0.98 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { delay: i * 0.1, duration: 0.7, ease: [0.2, 0, 0, 1] },
+    transition: { delay: i * 0.1, duration: 0.7, ease: easeOut },
   }),
 };
 
