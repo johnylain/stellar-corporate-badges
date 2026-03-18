@@ -72,7 +72,7 @@ const ProcessSection = () => {
                 {/* Content */}
                 <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${i % 2 === 0 ? "md:text-right md:pr-0" : "md:text-left md:pl-0"}`}>
                   <div className={`glass-card p-8 inline-block ${i % 2 === 0 ? "md:ml-auto" : ""}`}>
-                    <img src={step.icon} alt={step.title} className="w-10 h-10 mb-4 object-contain" />
+                    <img src={step.icon} alt={step.title} className="w-20 h-20 mb-4 object-contain" />
                     <h3 className="text-base font-medium tracking-tight mb-2">{step.title}</h3>
                     <p className="text-sm font-light leading-relaxed text-muted-foreground">{step.desc}</p>
                   </div>
