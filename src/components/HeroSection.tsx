@@ -43,7 +43,8 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-32">
+      <div className="relative z-10 w-full section-padding">
+        <div className="max-w-7xl mx-auto">
         <motion.div
           initial="hidden"
           animate="visible"
