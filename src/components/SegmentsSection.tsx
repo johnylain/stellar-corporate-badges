@@ -1,29 +1,33 @@
 import { motion } from "framer-motion";
-import { Crown, Users, Gift, Award, CalendarDays } from "lucide-react";
+import iconCrown from "@/assets/icon-crown.png";
+import iconUsers from "@/assets/icon-users.png";
+import iconGift from "@/assets/icon-gift.png";
+import iconAward from "@/assets/icon-award.png";
+import iconCalendar from "@/assets/icon-calendar.png";
 
 const segments = [
   {
-    icon: Crown,
+    icon: iconCrown,
     title: "Для топ-менеджмента",
     desc: "Эксклюзивные знаки из золота и платины с бриллиантами для наград и ротации руководства.",
   },
   {
-    icon: Users,
+    icon: iconUsers,
     title: "Для персонала",
     desc: "Строгие корпоративные значки для хостес, администраторов и охраны.",
   },
   {
-    icon: Gift,
+    icon: iconGift,
     title: "Для партнёров",
     desc: "Подарочные булавки с логотипом — VIP-мерч для ключевых партнёров.",
   },
   {
-    icon: Award,
+    icon: iconAward,
     title: "Для ветеранов",
     desc: "Памятные знаки «За заслуги» из серебра с горячей эмалью.",
   },
   {
-    icon: CalendarDays,
+    icon: iconCalendar,
     title: "Для мероприятий",
     desc: "Сувенирные значки участникам конференций, форумов и корпоративных событий.",
   },
@@ -69,7 +73,7 @@ const SegmentsSection = () => {
               custom={i}
               className="glass-card-hover p-8 flex flex-col"
             >
-              <seg.icon className="w-6 h-6 gold-icon mb-6" strokeWidth={1} />
+              <img src={seg.icon} alt={seg.title} className="w-10 h-10 mb-6 object-contain" />
               <h3 className="text-base font-medium mb-3 tracking-tight">{seg.title}</h3>
               <p className="text-sm font-light leading-relaxed text-muted-foreground">{seg.desc}</p>
             </motion.div>

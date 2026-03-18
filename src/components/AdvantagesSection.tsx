@@ -1,24 +1,27 @@
 import { motion } from "framer-motion";
-import { PenTool, Eye, ShieldCheck, Clock } from "lucide-react";
+import iconPen from "@/assets/icon-pen.png";
+import iconEye from "@/assets/icon-eye.png";
+import iconShield from "@/assets/icon-shield.png";
+import iconClock from "@/assets/icon-clock.png";
 
 const advantages = [
   {
-    icon: PenTool,
+    icon: iconPen,
     title: "Индивидуальный подход",
     desc: "Мы не штампуем. Садимся и рисуем, учитывая ваш брендбук, корпоративные цвета и ценности.",
   },
   {
-    icon: Eye,
+    icon: iconEye,
     title: "Прозрачность этапов",
     desc: "Вы получаете 3D-визуализацию будущего знака до начала производства. Никаких сюрпризов.",
   },
   {
-    icon: ShieldCheck,
+    icon: iconShield,
     title: "Свой литейный цех",
     desc: "Контроль качества на каждом этапе. Гарантия на замки и покрытие.",
   },
   {
-    icon: Clock,
+    icon: iconClock,
     title: "Точные сроки",
     desc: "Производим партию от 10 штук от 14 рабочих дней. Соблюдаем дедлайны.",
   },
@@ -51,7 +54,7 @@ const AdvantagesSection = () => {
               transition={{ delay: i * 0.1, duration: 0.7, ease: [0.2, 0, 0, 1] }}
               className="glass-card-hover p-10 flex gap-6"
             >
-              <a.icon className="w-8 h-8 gold-icon flex-shrink-0" strokeWidth={1} />
+              <img src={a.icon} alt={a.title} className="w-12 h-12 flex-shrink-0 object-contain" />
               <div>
                 <h3 className="text-lg font-medium tracking-tight mb-3">{a.title}</h3>
                 <p className="text-sm font-light leading-relaxed text-muted-foreground">{a.desc}</p>
