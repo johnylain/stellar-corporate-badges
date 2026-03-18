@@ -49,15 +49,24 @@ const StickyHeader = () => {
               ))}
             </nav>
 
-            {/* Desktop CTA */}
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="hidden md:inline-flex bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10"
-            >
-              Получить консультацию
-            </motion.a>
+            {/* Desktop phone + CTA */}
+            <div className="hidden md:flex items-center gap-6">
+              <a
+                href="tel:+79999999999"
+                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground luxury-transition"
+              >
+                <Phone size={14} />
+                +7 (999) 999-99-99
+              </a>
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10"
+              >
+                Получить консультацию
+              </motion.a>
+            </div>
 
             {/* Mobile burger */}
             <button
