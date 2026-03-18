@@ -8,7 +8,7 @@ const projects = [
   {
     image: portfolio1,
     alt: "Коллекция корпоративных знаков",
-    label: "CASE #041",
+    label: "РАБОТА #1",
     title: "Нагрудный знак «Федеральная Сеть»",
     meta: { metal: "Серебро 925 / Золото 585", coating: "Белый родий", enamel: "Горячая эмаль", edition: "150 ед." },
     large: true,
@@ -16,7 +16,7 @@ const projects = [
   {
     image: portfolio2,
     alt: "Золотой значок с горячей эмалью",
-    label: "CASE #038",
+    label: "РАБОТА #2",
     title: "Юбилейный знак к 25-летию",
     meta: { metal: "Золото 585", coating: "Золочение 999", enamel: "Горячая эмаль", edition: "50 ед." },
     large: false,
@@ -24,7 +24,7 @@ const projects = [
   {
     image: portfolio3,
     alt: "Серебряный корпоративный знак",
-    label: "CASE #035",
+    label: "РАБОТА #3",
     title: "Корпоративный значок для персонала",
     meta: { metal: "Серебро 925", coating: "Родирование", enamel: "Холодная эмаль", edition: "500 ед." },
     large: false,
