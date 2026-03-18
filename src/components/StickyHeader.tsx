@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const StickyHeader = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -17,8 +18,8 @@ const StickyHeader = () => {
       }>
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="text-lg font-medium tracking-tighter">
-          JewelerKitchen
+        <a href="#">
+          <img src={logo} alt="Логотип" className="h-8 md:h-10 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.15em] font-light text-muted-foreground">
