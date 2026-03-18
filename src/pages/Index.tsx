@@ -1,16 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import StickyHeader from "@/components/StickyHeader";
+import HeroSection from "@/components/HeroSection";
+import SegmentsSection from "@/components/SegmentsSection";
+import PortfolioSection from "@/components/PortfolioSection";
+import AdvantagesSection from "@/components/AdvantagesSection";
+import TechnologiesSection from "@/components/TechnologiesSection";
+import ProcessSection from "@/components/ProcessSection";
+import ContactForm from "@/components/ContactForm";
+import FooterSection from "@/components/FooterSection";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background text-foreground">
+      <StickyHeader />
+      <HeroSection />
+      <SegmentsSection />
+      <PortfolioSection />
+      <AdvantagesSection />
+      <TechnologiesSection />
+      <ProcessSection />
+      <ContactForm />
+      <FooterSection />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
