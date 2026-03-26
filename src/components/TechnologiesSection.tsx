@@ -51,7 +51,7 @@ const TechnologiesSection = () => {
   const activeTab = tabs.find((t) => t.id === active)!;
 
   return (
-    <section className="section-padding dark-section">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
