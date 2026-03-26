@@ -56,6 +56,28 @@
   }
 }
 
+.light-section {
+  --background: 40 20% 96%;
+  --foreground: 0 0% 10%;
+  --card: 40 15% 92%;
+  --card-foreground: 0 0% 10%;
+  --muted: 40 10% 88%;
+  --muted-foreground: 0 0% 40%;
+  --secondary: 40 15% 90%;
+  --secondary-foreground: 0 0% 10%;
+  --border: 0 0% 0% / 0.08;
+  --surface-glass: 0 0% 100% / 0.6;
+  --surface-glass-hover: 0 0% 100% / 0.8;
+  --inner-glow: 0 0% 100% / 0.5;
+  --border-gold: 43 76% 52% / 0.4;
+  --accent: 43 76% 42%;
+  --accent-foreground: 0 0% 100%;
+  --primary: 236 97% 13%;
+  --primary-foreground: 0 0% 95%;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
 @layer base {
   * {
     @apply border-border;

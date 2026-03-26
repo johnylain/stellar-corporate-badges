@@ -12,10 +12,6 @@ import bgTexture from "@/assets/bg-texture.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground relative">
-      <div
-        className="fixed inset-0 z-0 opacity-20 pointer-events-none"
-        style={{ backgroundImage: `url(${bgTexture})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      />
       <StickyHeader />
       <HeroSection />
       <SegmentsSection />
