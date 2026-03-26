@@ -35,7 +35,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="section-padding">
+    <section id="process" className="section-padding section-light">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ const ProcessSection = () => {
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[19px] md:left-1/2 md:-translate-x-px top-0 bottom-0 w-px bg-foreground/10" />
+          <div className="absolute left-[19px] md:left-1/2 md:-translate-x-px top-0 bottom-0 w-px bg-[hsl(var(--section-light-border))]" />
 
           <div className="space-y-12">
             {steps.map((step, i) => (
@@ -67,7 +67,7 @@ const ProcessSection = () => {
                 }`}
               >
                 {/* Dot */}
-                <div className="absolute left-[15px] md:left-1/2 md:-translate-x-1/2 top-1 w-[9px] h-[9px] rounded-full bg-accent border-2 border-background z-10" />
+                <div className="absolute left-[15px] md:left-1/2 md:-translate-x-1/2 top-1 w-[9px] h-[9px] rounded-full bg-accent border-2 border-[hsl(var(--section-light-bg))] z-10" />
 
                 {/* Content */}
                 <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${i % 2 === 0 ? "md:text-right md:pr-0" : "md:text-left md:pl-0"}`}>
