@@ -78,9 +78,9 @@ const HeroSection = () => {
           <motion.div variants={fadeUp} custom={3}>
             <motion.a
               href="#contact"
-              whileHover={{ scale: 1.02, boxShadow: "0 0 30px rgba(1, 5, 64, 0.5)" }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-block bg-primary text-primary-foreground px-10 py-5 rounded-sm font-medium tracking-wide uppercase text-sm border border-foreground/10 luxury-transition"
+              className="inline-block btn-gold px-10 py-5 rounded-sm font-medium tracking-wide uppercase text-sm border border-[hsl(var(--gold))]/20"
             >
               Рассчитать стоимость партии
             </motion.a>

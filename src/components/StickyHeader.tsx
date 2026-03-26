@@ -65,7 +65,7 @@ const StickyHeader = () => {
                 href="#contact"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="hidden lg:inline-flex bg-primary text-primary-foreground px-6 py-2.5 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10"
+                className="hidden lg:inline-flex btn-gold px-6 py-2.5 rounded-sm text-xs font-medium tracking-wide uppercase border border-[hsl(var(--gold))]/20"
               >
                 Получить консультацию
               </motion.a>
@@ -126,7 +126,7 @@ const StickyHeader = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: (navLinks.length + 1) * 0.08 }}
-              className="mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-sm text-xs font-medium tracking-wide uppercase border border-foreground/10 text-center"
+              className="mt-6 btn-gold px-6 py-3 rounded-sm text-xs font-medium tracking-wide uppercase border border-[hsl(var(--gold))]/20 text-center"
             >
               Получить консультацию
             </motion.a>
