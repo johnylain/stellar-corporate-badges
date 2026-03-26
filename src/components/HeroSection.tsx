@@ -63,7 +63,7 @@ const HeroSection = () => {
             custom={1}
             className="text-4xl md:text-5xl lg:text-7xl font-medium tracking-tighter leading-[1.05] mb-8"
           >
-            Знаки отличия для вашей команды: от эскиза до готовой партии в драгоценных металлах
+            Корпоративные знаки отличия с индивидуальным дизайном
           </motion.h1>
 
           <motion.p
