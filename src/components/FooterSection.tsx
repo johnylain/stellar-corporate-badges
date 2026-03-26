@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, MessageCircle, Send as TelegramIcon } from "lucide
 
 const FooterSection = () => {
   return (
-    <footer className="section-padding border-t border-foreground/10">
+    <footer className="section-padding border-t border-foreground/10 dark-section">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Contact */}
