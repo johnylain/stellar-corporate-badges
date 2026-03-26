@@ -83,9 +83,9 @@ const ContactForm = () => {
             <motion.button
               type="submit"
               disabled={loading}
-              whileHover={{ scale: 1.02, boxShadow: "0 0 30px rgba(1, 5, 64, 0.5)" }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-primary text-primary-foreground px-10 py-5 rounded-sm font-medium tracking-wide uppercase text-sm border border-foreground/10 luxury-transition flex items-center justify-center gap-3 disabled:opacity-60"
+              className="w-full btn-gold px-10 py-5 rounded-sm font-medium tracking-wide uppercase text-sm border border-[hsl(var(--gold))]/20 flex items-center justify-center gap-3 disabled:opacity-60"
             >
               <Send className="w-4 h-4" />
               {loading ? "Отправка..." : "Хочу такой знак для своей компании"}
