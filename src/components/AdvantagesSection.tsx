@@ -29,7 +29,7 @@ const advantages = [
 
 const AdvantagesSection = () => {
   return (
-    <section className="section-padding light-section" style={{ backgroundImage: "url('/images/watercolor-bg.avif')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay' }}>
+    <section className="section-padding light-section">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
