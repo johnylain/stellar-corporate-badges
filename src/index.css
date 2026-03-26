@@ -53,6 +53,14 @@
     --border-gold: 43 76% 52% / 0.3;
     --inner-glow: 0 0% 100% / 0.02;
     --text-secondary: 0 0% 60%;
+
+    /* Light section */
+    --section-light-bg: 40 30% 94%;
+    --section-light-fg: 0 0% 10%;
+    --section-light-muted: 0 0% 40%;
+    --section-light-border: 40 20% 80%;
+    --section-light-glass: 0 0% 100% / 0.6;
+    --section-light-glass-hover: 0 0% 100% / 0.8;
   }
 }
 
