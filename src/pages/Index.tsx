@@ -7,7 +7,7 @@ import TechnologiesSection from "@/components/TechnologiesSection";
 import ProcessSection from "@/components/ProcessSection";
 import ContactForm from "@/components/ContactForm";
 import FooterSection from "@/components/FooterSection";
-import bgTexture from "@/assets/bg-texture.jpg";
+
 
 const Index = () => {
   return (
