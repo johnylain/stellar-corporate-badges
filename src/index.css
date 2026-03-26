@@ -109,6 +109,31 @@
     @apply py-20 md:py-32 px-6 md:px-12 lg:px-20;
   }
 
+  .section-light {
+    background: hsl(var(--section-light-bg));
+    color: hsl(var(--section-light-fg));
+  }
+
+  .section-light .text-muted-foreground {
+    color: hsl(var(--section-light-muted));
+  }
+
+  .section-light .glass-card,
+  .section-light .glass-card-hover {
+    background: hsl(var(--section-light-glass));
+    border-color: hsl(var(--section-light-border));
+    box-shadow: 0 1px 3px hsl(0 0% 0% / 0.06);
+  }
+
+  .section-light .glass-card-hover:hover {
+    background: hsl(var(--section-light-glass-hover));
+    border-color: hsl(var(--border-gold));
+  }
+
+  .section-light .gold-text {
+    color: hsl(var(--gold-muted));
+  }
+
   .luxury-transition {
     transition: all 0.6s cubic-bezier(0.2, 0, 0, 1);
   }
