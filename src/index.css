@@ -143,27 +143,6 @@
   z-index: 0;
 }
 
-/* Gradient transitions between sections */
-.dark-section + .light-section::after,
-.light-section + .dark-section::after {
-  content: '';
-  position: absolute;
-  top: -80px;
-  left: 0;
-  right: 0;
-  height: 160px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.dark-section + .light-section::after {
-  background: linear-gradient(to bottom, hsl(220 20% 4%) 0%, hsl(38 25% 93%) 100%);
-}
-
-.light-section + .dark-section::after {
-  background: linear-gradient(to bottom, hsl(38 25% 93%) 0%, hsl(220 20% 4%) 100%);
-}
-
 @layer utilities {
   .label-text {
     @apply text-xs uppercase tracking-[0.2em] font-semibold;
