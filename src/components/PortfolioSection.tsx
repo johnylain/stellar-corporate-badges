@@ -50,7 +50,7 @@ const PortfolioSection = () => {
           transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}
           className="mb-16"
         >
-          <p className="label-text gold-text mb-4">Портфолио</p>
+          <p className="label-text gold-text mb-4 text-base">Портфолио</p>
           <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter">
             Избранные работы
           </h2>

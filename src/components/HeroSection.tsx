@@ -53,7 +53,7 @@ const HeroSection = () => {
           <motion.p
             variants={fadeUp}
             custom={0}
-            className="label-text gold-text mb-6"
+            className="label-text gold-text mb-6 text-base"
           >
             Ювелирная мастерская полного цикла
           </motion.p>

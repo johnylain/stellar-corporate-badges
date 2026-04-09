@@ -51,7 +51,7 @@ const SegmentsSection = () => {
           transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}
           className="mb-16"
         >
-          <p className="label-text gold-text mb-4">Сегменты</p>
+          <p className="label-text gold-text mb-4 text-base">Сегменты</p>
           <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter">
             Ваш знак отличия для любой задачи
           </h2>
