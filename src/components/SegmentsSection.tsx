@@ -42,7 +42,7 @@ const cardVariants = {
 
 const SegmentsSection = () => {
   return (
-    <section className="section-padding light-section" style={{ backgroundImage: "url('/images/verge-texture.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className="section-padding light-section" style={{ backgroundImage: "url('/images/grunge-golden.avif')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay' }}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,8 +66,7 @@ const SegmentsSection = () => {
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               custom={i}
-              className="glass-card-hover p-8 flex flex-col items-center text-center bg-opacity-70"
-              style={{ backgroundColor: 'rgba(var(--surface-glass-rgb, 30, 30, 30), 0.7)' }}
+              className="glass-card-hover p-8 flex flex-col items-center text-center"
             >
               <img src={seg.icon} alt={seg.title} className="w-20 h-20 mb-6 object-contain" />
               <h3 className="text-base font-medium mb-3 tracking-tight">{seg.title}</h3>
