@@ -18,7 +18,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="section-padding light-section" style={{ backgroundImage: "url('/images/halftone-golden.avif')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay' }}>
+    <section id="contact" className="section-padding light-section" style={{ backgroundImage: "url('/images/microconcrete-light.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay' }}>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <motion.div
