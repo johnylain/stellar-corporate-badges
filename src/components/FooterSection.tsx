@@ -21,11 +21,11 @@ const FooterSection = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 gold-icon flex-shrink-0" strokeWidth={1.5} />
-                <a href="tel:+74951234567" className="hover:text-foreground luxury-transition">+7 (495) 123-45-67</a>
+                <a href="tel:+79506666605" className="hover:text-foreground luxury-transition">+7 950 666 66 05</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 gold-icon flex-shrink-0" strokeWidth={1.5} />
-                <a href="mailto:info@insignia.ru" className="hover:text-foreground luxury-transition">info@info.ru</a>
+                <a href="mailto:jewelerkitchen@gmail.com" className="hover:text-foreground luxury-transition">jewelerkitchen@gmail.com</a>
               </div>
               <div className="flex gap-4 pt-2">
                 <a href="#" className="glass-card p-3 hover:bg-[hsl(var(--surface-glass-hover))] luxury-transition" aria-label="WhatsApp">
