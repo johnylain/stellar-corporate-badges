@@ -27,7 +27,7 @@ const ContactForm = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}
           >
-            <p className="label-text gold-text mb-4 text-base">Заявка</p>
+            <p className="label-text gold-text mb-4 text-lg">Заявка</p>
             <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter mb-6">
               Получите расчёт стоимости вашего тиража за 1 час
             </h2>
