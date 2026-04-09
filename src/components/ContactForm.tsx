@@ -28,7 +28,7 @@ const ContactForm = () => {
             transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}
           >
             <p className="label-text gold-text mb-4">Контакт</p>
-            <h2 className="text-3xl md:text-5xl font-medium tracking-tighter mb-6">
+            <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter mb-6">
               Получите расчёт стоимости вашего тиража за 1 час
             </h2>
             <p className="text-sm font-light leading-relaxed text-muted-foreground max-w-md">

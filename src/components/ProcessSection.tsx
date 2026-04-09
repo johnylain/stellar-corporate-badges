@@ -45,7 +45,7 @@ const ProcessSection = () => {
           className="mb-16"
         >
           <p className="label-text gold-text mb-4">Процесс</p>
-          <h2 className="text-3xl md:text-5xl font-medium tracking-tighter">
+          <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter">
             Как мы работаем
           </h2>
         </motion.div>
@@ -71,7 +71,7 @@ const ProcessSection = () => {
 
                 {/* Content */}
                 <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${i % 2 === 0 ? "md:text-right md:pr-0" : "md:text-left md:pl-0"}`}>
-                  <div className={`glass-card p-8 inline-flex ${i % 2 === 0 ? "md:ml-auto md:flex-row-reverse" : "md:flex-row"} flex-col md:flex-row items-start gap-4`}>
+                  <div className={`bg-foreground/[0.08] backdrop-blur-md border border-foreground/20 rounded-2xl p-8 inline-flex ${i % 2 === 0 ? "md:ml-auto md:flex-row-reverse" : "md:flex-row"} flex-col md:flex-row items-start gap-4`}>
                     <img src={step.icon} alt={step.title} className="w-20 h-20 object-contain flex-shrink-0" />
                     <div>
                       <h3 className="text-base font-medium tracking-tight mb-2">{step.title}</h3>

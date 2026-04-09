@@ -39,7 +39,7 @@ const AdvantagesSection = () => {
           className="mb-16 max-w-2xl"
         >
           <p className="label-text gold-text mb-4">Преимущества</p>
-          <h2 className="text-3xl md:text-5xl font-medium tracking-tighter">
+          <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter">
             Почему 90% клиентов возвращаются за новыми тиражами
           </h2>
         </motion.div>
