@@ -42,7 +42,7 @@ const cardVariants = {
 
 const SegmentsSection = () => {
   return (
-    <section className="section-padding light-section" style={{ backgroundImage: "url('/images/grunge-golden.avif')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay' }}>
+    <section className="section-padding light-section" style={{ backgroundImage: "url('/images/segments-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay' }}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
