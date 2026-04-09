@@ -73,7 +73,7 @@ const FooterSection = () => {
         {/* Bottom */}
         <div className="border-t border-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground font-light">
-            © {new Date().getFullYear()} ООО "КОМПАНИЯ". Все права защищены.
+            © {new Date().getFullYear()} ИП Адизова Д.Р.. Все права защищены.
           </p>
           <a href="#" className="text-xs text-muted-foreground font-light hover:text-foreground luxury-transition">
             Политика конфиденциальности
