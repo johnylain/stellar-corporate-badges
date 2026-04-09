@@ -38,7 +38,7 @@ const AdvantagesSection = () => {
           transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}
           className="mb-16 max-w-2xl"
         >
-          <p className="label-text gold-text mb-4 text-base">Преимущества</p>
+          <p className="label-text gold-text mb-4 text-lg">Преимущества</p>
           <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter">
             Почему 90% клиентов возвращаются за новыми тиражами
           </h2>
