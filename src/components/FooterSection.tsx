@@ -63,10 +63,9 @@ const FooterSection = () => {
             
             <p className="label-text gold-text mb-6">Реквизиты</p>
             <div className="space-y-2 text-xs font-light text-muted-foreground font-mono">
-              <p>ООО «КОМПАНИЯ»</p>
-              <p>ИНН 9999999999</p>
-              <p>ОГРН 9999999999</p>
-              <p>КПП 9999999999</p>
+              <p>ИП Адизова Д.Р.</p>
+              <p>ИНН 162902245821</p>
+              <p>ОГРНИП 323169000082577</p>
             </div>
           </motion.div>
         </div>
