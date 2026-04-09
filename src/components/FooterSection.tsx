@@ -13,7 +13,7 @@ const FooterSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: [0.2, 0, 0, 1] }}>
             
-            <p className="label-text gold-text mb-6">Контакты</p>
+            <p className="label-text gold-text mb-6 text-sm">Контакты</p>
             <div className="space-y-4 text-sm font-light text-muted-foreground">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 gold-icon flex-shrink-0 mt-0.5" strokeWidth={1.5} />
@@ -61,7 +61,7 @@ const FooterSection = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.7, ease: [0.2, 0, 0, 1] }}>
             
-            <p className="label-text gold-text mb-6">Реквизиты</p>
+            <p className="label-text gold-text mb-6 text-sm">Реквизиты</p>
             <div className="space-y-2 text-xs font-light text-muted-foreground font-mono">
               <p>ИП Адизова Д.Р.</p>
               <p>ИНН 162902245821</p>
