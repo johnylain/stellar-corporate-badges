@@ -52,12 +52,12 @@ const StickyHeader = () => {
             <div className="flex items-center gap-4 lg:gap-6">
               {/* Phone — icon only on tablet, full on desktop */}
               <a
-                href="tel:+79999999999"
+                href="tel:+79506666605"
                 className="hidden md:flex items-center gap-2 text-muted-foreground hover:text-foreground luxury-transition"
                 aria-label="Позвонить"
               >
                 <Phone size={16} />
-                <span className="text-xs">+7 (999) 999-99-99</span>
+                <span className="text-xs">+7 950 666 66 05</span>
               </a>
 
               {/* CTA — desktop only */}
@@ -110,14 +110,14 @@ const StickyHeader = () => {
             </nav>
 
             <motion.a
-              href="tel:+79999999999"
+              href="tel:+79506666605"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: navLinks.length * 0.08 }}
               className="mt-8 flex items-center gap-2 text-muted-foreground hover:text-foreground luxury-transition"
             >
               <Phone size={16} />
-              +7 (999) 999-99-99
+              +7 950 666 66 05
             </motion.a>
 
             <motion.a
