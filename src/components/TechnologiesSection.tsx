@@ -61,7 +61,7 @@ const TechnologiesSection = () => {
           className="mb-16"
         >
           <p className="label-text gold-text mb-4">Технологии</p>
-          <h2 className="text-3xl md:text-5xl font-medium tracking-tighter">
+          <h2 className="text-[2rem] md:text-[3.25rem] font-medium tracking-tighter">
             Материалы и технологии
           </h2>
         </motion.div>
