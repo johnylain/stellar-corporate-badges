@@ -47,7 +47,7 @@ const FooterSection = () => {
             className="glass-card overflow-hidden min-h-[250px]">
             
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.8!2d37.6!3d55.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzAwLjAiTiAzN8KwMzYnMDAuMCJF!5e0!3m2!1sru!2sru!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5!2d49.1221!3d55.7879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead0f1b1c3b3d%3A0x0!2z0KTQsNGC0YvRhSDQmtCw0YDQuNC80LAsIDksINCa0LDQt9Cw0L3RjA!5e0!3m2!1sru!2sru!4v1"
               className="w-full h-full min-h-[250px] border-0 grayscale invert opacity-60"
               loading="lazy"
               title="Карта расположения мастерской" />
