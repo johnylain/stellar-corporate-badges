@@ -66,7 +66,8 @@ const SegmentsSection = () => {
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               custom={i}
-              className="glass-card-hover p-8 flex flex-col items-center text-center"
+              className="glass-card-hover p-8 flex flex-col items-center text-center bg-opacity-70"
+              style={{ backgroundColor: 'rgba(var(--surface-glass-rgb, 30, 30, 30), 0.7)' }}
             >
               <img src={seg.icon} alt={seg.title} className="w-20 h-20 mb-6 object-contain" />
               <h3 className="text-base font-medium mb-3 tracking-tight">{seg.title}</h3>
